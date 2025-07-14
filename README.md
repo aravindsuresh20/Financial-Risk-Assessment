@@ -100,4 +100,5 @@ comprehensive overview of your dataset. This includes summary statistics, missin
 2.	Access the Prediction Form: Open http://127.0.0.1:5000 in your web browser.
 3.	Enter Financial Details: Input the borrower's 'Income', 'Loan Amount', and 'Debt-to-Income Ratio' into the respective fields.
 4.	Get Prediction: Click the "Predict Loan Repayment" button.
-5.	View Outcome: The application will display whether the borrower is "✅ Yes, likely to repay the loan." or "❌ No, unlikely to repay the loan." based on the model's prediction.
+5.	View Outcome: The application will display whether the borrower is
+"✅ Yes, likely to repay the loan." or "❌ No, unlikely to repay the loan." based on the model's prediction.
