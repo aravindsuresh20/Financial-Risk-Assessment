@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Prediction Result</title>
+ <link rel="stylesheet" href="/static/css/style.css">
+ <link rel="stylesheet" href="/static/css/animations.css">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+ <style>
+   body, html {
+     height: 100%;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+   }
+   .main-content {
+     flex: 1;
+   }
+   .logo-container {
+     padding: 10px;
+     text-align: left;
+   }
+   .particles-background {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+   }
+   .glass-footer {
+     margin-top: auto;
+   }
+</style>
+</head>
+<body>
+ <div class="particles-background" id="particles-js"></div>
+
+ <!-- Top Black Bar with HITACHI Logo -->
+ <header style="background-color: black; padding: 20px 20px;">
+   <div style="display: flex; align-items: center;">
+     <img src="/static/images/3.png" alt="HITACHI Logo" style="height: 50px;" />
+   </div>
+ </header>
+
+ <!-- Main Content -->
+ <main class="main-content">
+   <div class="form-container animate-fade-in">
+     <h1 class="main-title">Loan Repayment <span class="highlight">Prediction</span></h1>
+     <div class="prediction-result">
+       <div class="result-icon">
+         {% if "✅" in prediction %}
+         <i class="fas fa-check-circle success"></i>
+         {% else %}
+         <i class="fas fa-times-circle danger"></i>
+         {% endif %}
+       </div>
+       <p class="result-text">{{ prediction }}</p>
+       <a href="/" class="submit-btn" style="margin-top: 20px;">
+         <span>Try Another Prediction</span>
+       </a>
+     </div>
+   </div>
+ </main>
+
+ <!-- Footer -->
+ <footer class="glass-footer">
+   <div class="" style="text-align: center;">
+    Powered By Aravind Suresh .
+   </div>
+ </footer>
+
+ <div class="custom-cursor"></div>
+ <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+ <script src="/static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+Summary Statistics:
+
+                 Age      Gender Education Level Marital Status         Income  Credit Score   Loan Amount Loan Purpose Employment Status  Years at Current Job Payment History  Debt-to-Income Ratio   Assets Value  Number of Dependents          City  State Country  Previous Defaults  Marital Status Change
+count   15000.000000       15000           15000          15000   12750.000000  12750.000000  12750.000000        15000             15000          15000.000000           15000          15000.000000   12750.000000           12750.00000         15000  15000   15000       12750.000000           15000.000000
+unique           NaN           3               4              4            NaN           NaN           NaN            4                 3                   NaN               4                   NaN            NaN                   NaN         10614     59     243                NaN                    NaN
+top              NaN  Non-binary      Bachelor's        Widowed            NaN           NaN           NaN     Personal          Employed                   NaN            Good                   NaN            NaN                   NaN  East Michael     CO   Congo                NaN                    NaN
+freq             NaN        5059            3829           3893            NaN           NaN           NaN         3771              5026                   NaN            3822                   NaN            NaN                   NaN            19    282     124                NaN                    NaN
+mean       43.452667         NaN             NaN            NaN   69933.398510    699.109098  27450.010902          NaN               NaN              9.476267             NaN              0.350438  159741.497176               2.02651           NaN    NaN     NaN           1.992471               0.998467
+std        14.910732         NaN             NaN            NaN   29163.626207     57.229465  12949.940135          NaN               NaN              5.769707             NaN              0.143919   80298.115832               1.41130           NaN    NaN     NaN           1.416909               0.813782
+min        18.000000         NaN             NaN            NaN   20005.000000    600.000000   5000.000000          NaN               NaN              0.000000             NaN              0.100004   20055.000000               0.00000           NaN    NaN     NaN           0.000000               0.000000
+25%        31.000000         NaN             NaN            NaN   44281.500000    650.000000  16352.500000          NaN               NaN              4.000000             NaN              0.227386   90635.250000               1.00000           NaN    NaN     NaN           1.000000               0.000000
+50%        43.000000         NaN             NaN            NaN   69773.000000    699.000000  27544.000000          NaN               NaN              9.000000             NaN              0.350754  159362.000000               2.00000           NaN    NaN     NaN           2.000000               1.000000
+75%        56.000000         NaN             NaN            NaN   95922.750000    748.000000  38547.500000          NaN               NaN             15.000000             NaN              0.476095  228707.000000               3.00000           NaN    NaN     NaN           3.000000               2.000000
+max        69.000000         NaN             NaN            NaN  119997.000000    799.000000  49998.000000          NaN               NaN             19.000000             NaN              0.599970  299999.000000               4.00000           NaN    NaN     NaN           4.000000               2.000000
+
+
+
+Missing Values:
+
+Age                         0
+Gender                      0
+Education Level             0
+Marital Status              0
+Income                   2250
+Credit Score             2250
+Loan Amount              2250
+Loan Purpose                0
+Employment Status           0
+Years at Current Job        0
+Payment History             0
+Debt-to-Income Ratio        0
+Assets Value             2250
+Number of Dependents     2250
+City                        0
+State                       0
+Country                     0
+Previous Defaults        2250
+Marital Status Change       0
+
+
+
+Basic Insights:
+
+Total number of rows: 15000
+
+Total number of columns: 19
+
+Columns with missing values: ['Income', 'Credit Score', 'Loan Amount', 'Assets Value', 'Number of Dependents', 'Previous Defaults']
+
+Columns with no missing values: ['Age', 'Gender', 'Education Level', 'Marital Status', 'Loan Purpose', 'Employment Status', 'Years at Current Job', 'Payment History', 'Debt-to-Income Ratio', 'City', 'State', 'Country', 'Marital Status Change']
+
+

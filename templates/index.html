@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Financial Risk Assessment</title>
+ <link rel="stylesheet" href="/static/css/style.css" />
+ <link rel="stylesheet" href="/static/css/animations.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+ 
+</head>
+<body>
+ <!-- Top Black Bar with HITACHI Logo -->
+ <header style="background-color: black; padding: 20px 20px;">
+   <div style="display: flex; align-items: center;">
+     <img src="/static/images/3.png" alt="HITACHI Logo" style="height: 50px;" />
+   </div>
+ </header>
+
+ <!-- Background and Main Content -->
+ <div class="particles-background" id="particles-js"></div>
+ <main class="main-content">
+   <div class="form-container animate-fade-in">
+     <h1 class="main-title">Financial Risk <span class="highlight">Assessment</span></h1>
+     <p class="subtitle">Check Loan Repayment Possibility with AI</p>
+     <form action="/predict" method="post" class="risk-form">
+       <div class="form-group">
+         <label for="income"></label>
+         <input type="number" step="0.01" name="income" id="income" required class="form-input" placeholder="Income (in Lacs)" style="color: rgb(72, 72, 231);" />
+         <div class="input-underline"></div>
+       </div>
+       <div class="form-group">
+         <label for="loan_amount"></label>
+         <input type="number" step="0.01" name="loan_amount" id="loan_amount" required class="form-input" placeholder="Loan Amount" style="color: rgb(72, 72, 231);" />
+         <div class="input-underline"></div>
+       </div>
+       <div class="form-group">
+         <label for="dti_ratio"></label>
+         <input type="number" step="0.01" name="dti_ratio" id="dti_ratio" required class="form-input" placeholder="Debt-to-Income Ratio" style="color: rgb(72, 72, 231);" />
+         <div class="input-underline"></div>
+       </div>
+       <button type="submit" class="submit-btn">
+         <span>Predict Risk</span>
+         <div class="btn-arrow">
+           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+           </svg>
+         </div>
+       </button>
+     </form>
+   </div>
+ </main>
+
+ <!-- Footer -->
+ <footer style="margin-top: 100px; text-align: center; font-size: 14px; color: #aaa;">
+   <p>Powered By Aravind Suresh.</p>
+ </footer>
+
+ <div class="custom-cursor"></div>
+ <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+ <script src="/static/js/main.js"></script>
+</body>
+</html>
